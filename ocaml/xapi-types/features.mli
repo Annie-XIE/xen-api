@@ -60,6 +60,7 @@ type feature =
   | Pool_size                    (** Enable use of Pooling for more than 3 Hosts *)
   | CBT                          (** Enable the use of CBT *)
   | USB_passthrough              (** Enable the use of USB passthrough. *)
+  | WS_proxy                     (** Enalbe the use of Web socket proxy *)
 
 (** Convert RPC into {!feature}s *)
 val feature_of_rpc : Rpc.t -> feature
